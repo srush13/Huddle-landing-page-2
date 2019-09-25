@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+$font-heading: 'Poppins', sans-serif;
+$font-content: 'Open Sans', sans-serif;
+$violet:hsla(257, 40%, 49%,0.9);
+*{
+    box-sizing: border-box;
+}
+
+body{
+   background:url('../images/bg-desktop.svg');
+   background-color: $violet;
+   height: 100vh;
+   overflow-y:hidden;
+    color:#fff;
+    font-size: 18px;
+    font-family:$font-content;
+}
+//navbar
+.logo-img{
+height:35px;
+width:200px;
+}
+//hero
+h1{
+    font-family: $font-heading;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration:none;
+    color:$violet;
+}
+button{
+    background:#fff;
+    padding:10px;
+    border-radius:20px;
+    border:none;
+    width:150px;
+    box-shadow: 0px 2px  rgb(82, 82, 82);
+}
+
+.hero{
+    margin-top:50px;
+    display:flex;
+    justify-content: space-around;
+  
+    
+}
+.hero-img{
+    flex-basis:30%;
+}
+
+.hero-content{
+    flex-basis: 35%;
+    padding: 50px;
+    
+}
+//footer
+.icons{
+    display:flex;
+    justify-content: flex-end;
+
+}
+i{
+    padding:10px;
+    margin-right:10px;
+    border:1px solid #fff;
+    border-radius:50%;
+}
+
+
+
+//MEDIA QUERIES
+
+@media (max-width:375px){
+
+    body{
+        background:url('../images/bg-mobile.svg');
+        background-color: $violet;
+    }
+.hero{
+    flex-direction:column;
+    
+    
+}
+.hero-img{
+
+text-align: center;
+}
+#illustration1{
+    width:80%;
+    height:auto;
+    
+}
+.hero-content{
+    padding:30px;
+    text-align: center;
+}
+
+.icons{
+    margin:30px;
+    display:flex;
+  justify-content: center;
+}
+}
