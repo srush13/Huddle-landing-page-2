@@ -9,7 +9,6 @@ body {
   background: url("../images/bg-desktop.svg");
   background-color: rgba(103, 75, 175, 0.9);
   height: 100vh;
-  overflow-y: hidden;
   color: #fff;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
