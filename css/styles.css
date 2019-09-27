@@ -43,8 +43,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .hero-content {
@@ -73,19 +71,17 @@ i {
     background-color: rgba(103, 75, 175, 0.9);
   }
   .hero {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .hero-img {
+  .hero-content, .hero-img {
     text-align: center;
   }
   #illustration1 {
-    width: 80%;
+    width: 100%;
     height: auto;
-  }
-  .hero-content {
-    padding: 30px;
-    text-align: center;
   }
   .icons {
     margin: 30px;
@@ -98,19 +94,18 @@ i {
   }
 }
 
-@media only screen and (min-device-width: 500px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 500px) and (max-width: 1024px) {
   .hero {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .hero-content {
-    text-align: center;
-  }
-  .hero-img {
+  .hero-content, .hero-img {
     text-align: center;
   }
   #illustration1 {
-    width: 80%;
+    width: 100%;
     height: auto;
   }
 }
