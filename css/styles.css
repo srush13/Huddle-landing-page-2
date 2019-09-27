@@ -47,14 +47,7 @@ button {
       justify-content: space-around;
 }
 
-.hero-img {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
-
 .hero-content {
-  -ms-flex-preferred-size: 35%;
-      flex-basis: 35%;
   padding: 50px;
 }
 
@@ -74,16 +67,14 @@ i {
   border-radius: 50%;
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   body {
     background: url("../images/bg-mobile.svg");
     background-color: rgba(103, 75, 175, 0.9);
   }
   .hero {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .hero-img {
     text-align: center;
@@ -104,6 +95,23 @@ i {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 1024px) {
+  .hero {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .hero-img {
+    text-align: center;
+  }
+  #illustration1 {
+    width: 80%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
